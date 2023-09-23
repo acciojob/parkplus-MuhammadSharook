@@ -53,7 +53,7 @@ public class ReservationServiceImpl implements ReservationService {
                     wheels = Integer.MAX_VALUE;
                 }
 
-                if(wheels >= numberOfWheels && !s.isOccupied())
+                if(wheels >= numberOfWheels && !s.getOccupied())
                 {
                     int total_Price = s.getPricePerHour()*timeInHours;
                     min_price = Math.min(total_Price,min_price);
